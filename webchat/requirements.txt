@@ -1,0 +1,11 @@
+rasa==3.0.5
+rasa-sdk==3.0.3
+Flask==1.1.1
+Flask-Cors==3.0.8
+Flask-SocketIO==4.2.1
+sanic==21.6.0
+sanic-jwt==1.7.0
+sanic-plugin-toolkit==1.2.1
+sanic-routing==0.7.0
+gevent-websocket==0.10.1
+eventlet==0.33.0
