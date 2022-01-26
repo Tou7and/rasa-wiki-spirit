@@ -1,0 +1,52 @@
+version: '3.0'
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - 你好
+    - Hello
+    - 哈囉
+    - 安安
+    - 早安
+    - 午安
+    - 很高興見到你
+
+- intent: leave
+  examples: |
+    - 掰掰
+    - bye!
+    - 閉嘴
+    - 再見
+    - 道別的時機到了
+    - 再會
+    - 晚安
+    - 我該去洗澡了
+    - 我該去睡覺了
+
+- intent: ask_time
+  examples: |
+    - 現在幾點
+    - 今天幾號
+    - 現在時間是?
+    - 幾點幾分
+    - 幾月幾日
+    - 想請問時間
+    - 現在多晚了
+
+- intent: ask_wiki
+  examples: |
+    - 查 wiki
+    - 查詢 wikipedia
+    - 維基百科
+    - 幫我查維基
+    - 幫我查東西
+    - 查詢功能
+
+- intent: unknown
+  examples: |
+    - 不知道該說什麼
+    - 你能做什麼
+    - 你會什麼
+    - 你能幫我什麼?
+

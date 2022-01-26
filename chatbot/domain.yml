@@ -1,0 +1,20 @@
+version: '3.0'
+
+intents:
+- greet
+- leave
+- unknown
+- ask_time
+- ask_wiki
+
+actions:
+- action_hello
+- action_bye
+- action_show_functions
+- action_answer_time
+- action_query_wiki
+- action_get_keyword
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

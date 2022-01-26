@@ -1,0 +1,40 @@
+version: '3.0'
+
+stories:
+ - story: deal with unkown 
+   steps:
+   - intent: unknown
+   - action: action_show_functions
+   - action: action_restart
+
+ - story: say hello 
+   steps:
+   - intent: greet
+   - action: action_hello
+   - action: action_restart
+
+ - story: say bye 
+   steps:
+   - intent: leave
+   - action: action_bye
+   - action: action_restart
+
+ - story: time 
+   steps:
+   - intent: ask_time
+   - action: action_answer_time
+   - action: action_restart
+
+ - story: we love wiki I
+   steps:
+   - intent: ask_wiki
+   - action: action_get_keyword
+   - or:
+     - intent: greet
+     - intent: leave
+     - intent: ask_time
+     - intent: ask_wiki
+     - intent: unknown
+   - action: action_query_wiki
+   - action: action_restart
+
