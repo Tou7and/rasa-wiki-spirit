@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  chatbot:
+    image: tou7and/rasa-sdk:3.0.2-wikispirit
+    ports:
+      - "5005:5005"
+    command: rasa run --enable-api --cors "*" --debug
+
+  action:
+    image: tou7and/rasa-sdk:3.0.2-wikispirit
+    expose:
+      - "5055"
+    command: ["rasa", "run", "actions"]
