@@ -1,0 +1,12 @@
+<div id="rasa-chat-widget" data-websocket-url="http://chatbot:5005"></div>
+<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+<script>
+  WebChat.default.init(
+        {
+          customData: { language: "en" },
+          socketUrl: "http://chatbot:5005",
+	  socketPath: "/socket.io/",
+          // add other props here
+        }
+  )
+</script>
